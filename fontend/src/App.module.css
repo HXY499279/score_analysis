@@ -1,0 +1,13 @@
+.App {
+  margin: 20px;
+}
+.chart-wrap {
+  border: 1px solid silver !important;
+  padding: 10px !important;
+  text-align: center;
+  font-size: 20px;
+}
+.chart-title{
+  display: block;
+  margin-bottom: 10px;
+}

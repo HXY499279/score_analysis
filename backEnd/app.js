@@ -8,7 +8,6 @@ mongoose.connect(DB_URL);
 
 var app = express()
 
-app.engine('html', require('express-art-template'))
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
