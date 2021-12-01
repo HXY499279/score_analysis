@@ -48,7 +48,7 @@ function App() {
       >
         <span style={{ fontSize: "25px", fontWeight: 800 }}>成绩单数据可视化分析</span>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span>{`数据来源：${Instructor?.title}`}</span>
+        <span>{`数据来源：${Instructor?.dataSources}`}</span>
       </p>
       <Row gutter={[16, 24]}>
         <Col className="gutter-row" span={8}>
