@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { getHistogramChart, getMajorData } from '../../util'
 import { Chart } from '@antv/g2';
+import { ISMOBILE } from '../../App';
 
 let chart = null
 
@@ -38,7 +39,7 @@ export const MajorHistogramChart = (props) => {
         return {
           offset: -10,
           content: (obj) => {
-            if (obj.value) {
+            if (obj.value && !ISMOBILE) {
               return obj.value + "%";
             }
           },
@@ -48,7 +49,6 @@ export const MajorHistogramChart = (props) => {
   }, [])
 
   if (data?.length) {
-    console.log(getHistogramChart(data));
     chart?.data(getHistogramChart(data));
     chart.render();
   }

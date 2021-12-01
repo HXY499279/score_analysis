@@ -1,5 +1,6 @@
 .App {
   margin: 20px;
+  padding-bottom: 30px;
 }
 .chart-wrap {
   border: 1px solid silver !important;

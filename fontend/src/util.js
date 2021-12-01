@@ -77,7 +77,6 @@ export const getHistogramChart = (data) => {
 }
 export const getHistogramAverageChart = (data) => {
   // { type: 'Apple', name: '整体', value: 30 }
-  console.log(data);
   let dataArr = data.map(item => {
     const { name, data: { _nan_average, _nv_average, _average } } = item
     const retArr = [

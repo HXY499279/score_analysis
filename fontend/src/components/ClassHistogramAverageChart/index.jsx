@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { getHistogramAverageChart, getClassData } from '../../util'
 import { Chart } from '@antv/g2';
+import {ISMOBILE} from '../../App'
 
 let chart = null
 
@@ -38,8 +39,8 @@ export const ClassHistogramAverageChart = (props) => {
         return {
           offset: -10,
           content: (obj) => {
-            if (obj.value) {
-              return obj.value 
+            if (obj.value && !ISMOBILE) {
+              return obj.value
             }
           },
         };
