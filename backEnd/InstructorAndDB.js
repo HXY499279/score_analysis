@@ -32,8 +32,27 @@ const TEST = {
     },
   ]
 }
+const HXL = {
+  name:"黄晓兰",
+  dataSources:"大一上高数半期成绩单",
+  tableName: "hxl_gs_half_totals",
+  majors: [
+    {
+      MAJOR: "工商管理类",
+      CLASSES: ["03122101", "03122102", "03122103","03122104","03122105"]
+    },
+    {
+      MAJOR: "电子商务类",
+      CLASSES: ["03162101", "03162102"]
+    },
+    {
+      MAJOR: "邮政工程",
+      CLASSES: ["18012101", "18012102"]
+    },
+  ]
+}
 
 module.exports = {
-  Instructor: ZS,
+  Instructor: HXL,
   DB_URL: MONGODB_URL
 }
