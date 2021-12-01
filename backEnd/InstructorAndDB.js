@@ -4,7 +4,7 @@ const MONGODB_URL = "mongodb://localhost:27017/schoolReport"
 */
 const ZS = {
   name:"张盛",
-  title:"大一上高数半期成绩单",
+  dataSources:"大一上高数半期成绩单",
   tableName: "zs_gs_half_totals",
   majors: [
     {
@@ -19,7 +19,7 @@ const ZS = {
 }
 const TEST = {
   name:"测试",
-  title:"测试成绩分析",
+  dataSources:"测试成绩分析",
   tableName: "tests",
   majors: [
     {
@@ -34,6 +34,6 @@ const TEST = {
 }
 
 module.exports = {
-  Instructor: TEST,
+  Instructor: ZS,
   DB_URL: MONGODB_URL
 }

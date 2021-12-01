@@ -8,7 +8,7 @@ const getAverage = (stus) => {
   pureData.forEach((item, i) => {
     pureData[i] = +item.score
   })
-  const average = pureData.length?(pureData.reduce((a, b) => a + b) / pureData.length).toFixed(2) * 1:0
+  const average = pureData.length?(pureData.reduce((a, b) => a + b) / pureData.length).toFixed(1) * 1:0
   return average
 }
 

@@ -8,6 +8,11 @@ mongoose.connect(DB_URL);
 
 var app = express()
 
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*') // 跨域最重要的一步 设置响应头
+    next(); // 执行next函数执行后续代码
+})
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
