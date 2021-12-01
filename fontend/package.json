@@ -2,6 +2,7 @@
   "name": "fontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "proxy": "http://localhost:5000",
   "dependencies": {
     "@antv/g2": "^4.1.34",

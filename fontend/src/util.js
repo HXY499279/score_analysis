@@ -1,21 +1,25 @@
 // 获取及格率
 export const getRate = (passNum, num) => {
-  const rate = ((passNum / num) * 100).toFixed(2) * 1
+  const rate = ((passNum / num) * 100).toFixed(1) * 1
   return rate
 }
 // 数据处理
 export const getMajorData = (majors) => {
-  let data = majors?.map(item => {
-    return item.major
-  })
-  return data
+  if(majors){
+    let data = majors?.map(item => {
+      return item.major
+    })
+    return data
+  }
 }
 
 export const getClassData = (majors) => {
-  let data = majors?.map(item => {
-    return item.classes
-  })
-  return data?.flat()
+  if(majors){
+    let data = majors?.map(item => {
+      return item.classes
+    })
+    return data?.flat()
+  }
 }
 
 export const getLineChartData = (data) => {

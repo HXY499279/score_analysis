@@ -38,7 +38,9 @@ export const ClassHistogramChart = (props) => {
         return {
           offset: -10,
           content: (obj) => {
-            return  obj.value + "%";
+            if (obj.value) {
+              return obj.value + "%";
+            }
           },
         };
       });

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Row, Col, Card, Select } from "antd"
+import { Row, Col } from "antd"
 import axios from "axios"
 import {
   Total,
@@ -14,9 +14,6 @@ import {
 } from './components';
 import 'antd/dist/antd.css';
 import styles from './App.module.css';
-
-const { Option } = Select;
-
 
 axios.interceptors.response.use((res) => {
   return res.data
@@ -75,7 +72,7 @@ function App() {
         </Col>
         <Col className="gutter-row" span={8}>
           <div className={styles["chart-wrap"]}>
-            <span className={styles["chart-title"]}>分数段</span>
+            <span className={styles["chart-title"]}>分数段占比</span>
             <MajorHistogramLineChart majors={majors} keyword="major" />
           </div>
         </Col>
@@ -100,7 +97,7 @@ function App() {
         </Col>
         <Col className="gutter-row" span={12}>
           <div className={styles["chart-wrap"]}>
-          <span className={styles["chart-title"]}>分数段</span>
+          <span className={styles["chart-title"]}>分数段占比</span>
             <ClassHistogramLineChart majors={majors} keyword="class" />
           </div>
         </Col>
@@ -112,7 +109,7 @@ function App() {
         </Col>
         <Col className="gutter-row" span={24}>
         <div className={styles["chart-wrap"]}>
-            <span className={styles["chart-title"]}>男女生班级贡献</span>
+            <span className={styles["chart-title"]}>男女生班级贡献对比</span>
             <ClassHistogramAverageChart majors={majors} keyword="class" />
           </div>
         </Col>
