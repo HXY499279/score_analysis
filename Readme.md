@@ -110,4 +110,5 @@ module.exports = {
 3. 在 fontEnd 文件夹下执行 npm start
 
 ## 7. 项目启动成功，显示成绩单可视化数据！
+![5E5A0BFC36DB7F9EDA8CD95075269325](https://user-images.githubusercontent.com/74492791/144187974-084b64f8-d620-4991-ac74-92a9418eb86c.png)
 
